@@ -1,0 +1,39 @@
+{
+    "name": "gaiththewolf/jasper-report-client",
+    "description": "Laravel package integrating the Jasper Server REST v2 client (Jaspersoft/rest-client)",
+    "keywords": [
+        "gaiththewolf",
+        "jasper-report-client"
+    ],
+    "homepage": "https://github.com/gaiththewolf/jasper-report-client",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "GAITHTHEWOLF",
+            "email": "gaiththewolf@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "jaspersoft/rest-client": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gaiththewolf\\JasperReportClient\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gaiththewolf\\JasperReportClient\\JasperReportClientServiceProvider"
+            ],
+            "aliases": {
+                "JSRClient": "Gaiththewolf\\JasperReportClient\\JasperReportClientFacade"
+            }
+        }
+    }
+}
