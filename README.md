@@ -28,7 +28,7 @@ You can publish the config with:
 php artisan vendor:publish --provider="Gaiththewolf\JasperReportClient\JasperReportClientServiceProvider" --tag="config"
 ```
 
-## Config for .env file
+## .env file
 
 ```
 JRS_BASE_URL="http://127.0.0.1:8080/jasperserver"
